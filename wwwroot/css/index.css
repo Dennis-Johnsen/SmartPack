@@ -1,95 +1,56 @@
-#TextInput {
-    width: 50%; /* Width of the input field */
-    padding: 10px; /* Padding inside the input field */
-    margin: 5px 0; /* Space outside the input field */
-    border: 1px solid #ccc; /* Border color */
-    border-radius: 5px; /* Rounded corners */
-  }
+html, body {
   
-  html, body {
-    display: block;
-    font-family: Arial, Helvetica, sans-serif;
-    height: 100%; /* You can remove this if you want natural height */
-    overflow-y: auto; /* Ensure vertical scroll is available if needed */
-  }
-  
-  img {
-    width:60px;
-    height:60px;
-  }
-  
-  .navbar {
-    background-color: #000000; /* Black background */
-    overflow: hidden; /* Clears floats */
-  }
-  
-  .fixed-header {
-    display: flex;
-    align-items: center; /* Vertically center align items */
-    text-align: center; /* This might not be necessary, depending on other styles */
-  }
-  
-  h1 {
-    text-align: center; /* Centers text horizontally when inline elements are wrapped in block-level elements */
-    width: 100%;
-  }
-  
-  #outputBox {
-    border: 1px solid #ccc;
-    padding: 10px;
-    overflow: auto; /* Enables scrolling if content is too tall for the box */
-    white-space: normal; /* Allows text to wrap */
-    min-height: 100px; /* Minimum height */
-    max-height: 500px; /* Maximum height before scrolling */
-    resize: none; /* If you don't want users to manually resize the box */
-    width: 50%;
-    position: relative;
-  }
-  
-  
-  .center-container {
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Aligns items on the vertical line */
-    margin-top: 10px; /* Adds some space above the container */
-    width: 100%;
-    position: fixed; /* This makes the container fixed position */
-    bottom: 20px; /* Height of the input field container + any desired margin */
-  }
-  
-  /* Hyperlink */
-  
-  .button {
-    padding: 10px 20px;
-    margin: 5px;
-    background-color: #8b1d5d;
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-    border: none; /* Removes the button border */
-    border-radius: 5px; /* Adds rounded corners to the button */
-  }
-  
-  .categoryButton {
-    background-color: #cecece; /* light grey background */
-    border: none; /* no border */
-    color: #000000; /* black text */
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    padding: 12px 24px; /* size of the padding to make the buttons larger */
-    transition: background-color 0.3s; /* smooth transition for hover effect */
-  }
-  
-  .categoryButton:hover {
-    background-color: #292727; /* black background on hover */
-    color: #FFFFFF; /* white text on hover */
-  }
-  
-  .container {
-    display: flex;
-    justify-content: center; /* Centers children horizontally */
-  }
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+}
+
+#outputBox {
+  border: 1px solid #ccc;
+  min-height: 400px; /* Minimum height */
+  width: 50%;
+  text-align: left;
+  white-space: normal; /* Allows text to wrap */
+  list-style-type: none; /* Removes bullets */
+}
+
+.output-container {
+  display: flex; /* This makes it a flex container */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Aligns items on the vertical line */
+  width: 100%;
+}
+
+#textInput {
+  width: 60%; /* Width of the input field */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px;
+}
+
+.center-container {
+  display: flex; /* This makes it a flex container */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Aligns items on the vertical line */
+  width: 100%;
+  position: sticky;
+  bottom: 0px;
+}
+
+.relative-container {
+  position: sticky;
+  bottom: 60px;
+}
+
+#sendButton {
+  padding: 10px;
+  margin: 5px;
+  background-color: #8b1d5d;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  border: none; /* Removes the button border */
+  border-radius: 5px; /* Adds rounded corners to the button */
+}

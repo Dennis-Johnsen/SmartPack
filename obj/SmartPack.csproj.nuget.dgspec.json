@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Dennis\\SmartPack\\SmartPack.csproj": {}
+    "C:\\Users\\Dennis\\SmartPack\\SmartPack.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Dennis\\SmartPack\\SmartPack.csproj": {
+    "C:\\Users\\Dennis\\SmartPack\\SmartPack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Dennis\\SmartPack\\SmartPack.csproj",
+        "projectUniqueName": "C:\\Users\\Dennis\\SmartPack\\SmartPack.csproj",
         "projectName": "SmartPack",
-        "projectPath": "c:\\Users\\Dennis\\SmartPack\\SmartPack.csproj",
+        "projectPath": "C:\\Users\\Dennis\\SmartPack\\SmartPack.csproj",
         "packagesPath": "C:\\Users\\Dennis\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Dennis\\SmartPack\\obj\\",
+        "outputPath": "C:\\Users\\Dennis\\SmartPack\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dennis\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,6 +44,18 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

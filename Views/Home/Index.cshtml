@@ -7,28 +7,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- <link rel="stylesheet" href="~/css/index.css" asp-append-version="true"> -->
+<link rel="stylesheet" href="~/css/index.css" asp-append-version="true">
 </head>
 <body>
 
-
 <div class="fixed-header">
-  <img src="pictures/avinorLogo.png" alt="Avinor">
-
+  <!-- <img src="~/images/AvinorLogo.png" alt="Avinor" style="height: 50px; width: 50px;"> -->
   <h1> Hei, vi vil hjelpe deg!</h1>
 </div>
 
-
-<div class="center-container">
+<div class="output-container">
   <ul id="outputBox"></ul>
     <!-- Output will be displayed here -->
 </div>
 
-<div class="center-container">
-<input type="text" id="textInput" name="textInput" placeholder="Spør meg om noe" autocomplete="off">
-<input type="button" id="sendButton" value="Send Message">
-</div>
 
+<div class="center-container">
+  <input type="text" id="textInput" name="textInput" placeholder="Spør meg om noe" autocomplete="off">
+  <input type="button" id="sendButton" value="Send">
+</div>
 
 <script src="~/js/signalr/dist/browser/signalr.js"></script>
 <script src="~/js/chat.js"></script>
